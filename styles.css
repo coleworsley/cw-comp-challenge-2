@@ -1,3 +1,5 @@
+/*--------Global Selectors-------*/
+
 * {
   box-sizing: border-box;
 }
@@ -6,47 +8,114 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+.header-title,
+.header-profile-link,
+.link {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+a {
+  padding: 10px 5px;
+}
 
 /*------------Header------------*/
 header {
   background-color: #202020;
   display: flex;
   flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-color: transparent;
-  border: none;
-}
-
-.button-1 {
-  background-image: url('assets/svg/share.svg');
-}
-
-.button-2 {
-  background-image: url('assets/svg/list.svg');
-}
-
-.button-3 {
-  background-image: url('assets/svg/avatar.svg');
+  padding: 10px;
 }
 
 
+/* Title */
+.header-title {
+  padding: 10px;
+  background-image: url("assets/svg/linux-logo.svg");
+  background-position: 90px 50%;
+  background-size: 1.9em;
+}
+
+.title-text {
+  display: inline-block;
+}
+
+/* User Profile */
+.header-profile {
+  padding: 10px;
+}
+
+.header-profile-link {
+  background-image: url("assets/svg/avatar.svg");
+  background-position: 0px 50%;
+  background-size: 25px;
+}
+
+.down-arrow {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid red;
+}
+
+h4 {
+  display: inline-block;
+  margin-left: 25px;
+}
 
 
 nav {
   background-color: yellow;
   height: 100%;
 }
+
+/* Navigation links*/
+
+.header-links {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.link {
+  background-position: 0px 50%;
+  background-size: 25px;
+  text-align: left;
+}
+
+.link p {
+  margin-left: 25px;
+}
+
+.share {
+  background-image: url('assets/svg/share.svg');
+}
+
+.playlist {
+  background-image: url('assets/svg/list.svg');
+}
+
+.video {
+  background-image: url('assets/svg/avatar.svg');
+}
+
+
+
+
+
 
 .header-title {
   background-color: green;
