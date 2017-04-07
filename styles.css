@@ -16,7 +16,8 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
 }
 .header-title,
@@ -27,7 +28,11 @@ h4 {
   border: none;
 }
 a {
-  padding: 10px 5px;
+  /*padding: 10px 5px;*/
+}
+h1,
+h2 {
+  font-size: 35px;
 }
 
 /*------------Header------------*/
@@ -38,66 +43,73 @@ header {
   padding: 10px;
 }
 
-
 /* Title */
 .header-title {
-  padding: 10px;
   background-image: url("assets/svg/linux-logo.svg");
   background-position: 90px 50%;
-  background-size: 1.9em;
+  background-size: 25px;
 }
 
 .title-text {
   display: inline-block;
+  color: white;
 }
 
 /* User Profile */
-.header-profile {
-  padding: 10px;
+.header-profile-link {
+  display: inline-block;
+  height: 40px;
+}
+
+h4 {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 15px;
+  line-height: 40px;
 }
 
 .header-profile-link {
   background-image: url("assets/svg/avatar.svg");
   background-position: 0px 50%;
-  background-size: 25px;
+  background-size: 15px;
+}
+
+.header-profile-link:visited {
+  color: #1AA4FF;
 }
 
 .down-arrow {
   display: inline-block;
   height: 0;
   width: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid red;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 12px solid #1AA4FF;
 }
 
-h4 {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-
-nav {
-  background-color: yellow;
-  height: 100%;
-}
 
 /* Navigation links*/
+nav {
+  height: 100%;
+}
 
 .header-links {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .link {
   background-position: 0px 50%;
-  background-size: 25px;
+  background-size: 15px;
   text-align: left;
 }
 
-.link p {
-  margin-left: 25px;
+p {
+  font-size: 15px;
+  color: #8B8B8B;
+  margin: 5px 0 5px 25px;
 }
 
 .share {
@@ -114,13 +126,29 @@ nav {
 
 
 
-
-
-
-.header-title {
-  background-color: green;
+/*--------Main Section-------*/
+main {
+  padding: 10px;
 }
 
-.header-profile {
-  background-color: orange;
+h2 {
+  font-size: 35px;
+}
+
+/* Card */
+.card-container {
+  border: 1px solid grey;
+}
+
+/* Card Header */
+.card-header {
+  background-image: url('assets/bond.jpg');
+  background-size: cover;
+  height: 150px;
+}
+
+.forward-link {
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
 }
