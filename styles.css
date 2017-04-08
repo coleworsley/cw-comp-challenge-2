@@ -1,4 +1,6 @@
-/*--------Global Selectors-------*/
+/*----------------------------
+------------Global------------
+------------------------------*/
 
 * {
   box-sizing: border-box;
@@ -9,6 +11,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: #EBEBEB;
 }
 a {
   text-decoration: none;
@@ -35,7 +38,9 @@ h2 {
   font-size: 35px;
 }
 
-/*------------Header------------*/
+/*----------------------------
+------------Header------------
+------------------------------*/
 header {
   background-color: #202020;
   display: flex;
@@ -61,7 +66,7 @@ header {
   height: 40px;
 }
 
-h4 {
+.username {
   display: inline-block;
   margin-left: 25px;
   font-size: 15px;
@@ -106,7 +111,7 @@ nav {
   text-align: left;
 }
 
-p {
+.link p {
   font-size: 15px;
   color: #8B8B8B;
   margin: 5px 0 5px 25px;
@@ -126,29 +131,106 @@ p {
 
 
 
-/*--------Main Section-------*/
+/*----------------------------
+---------Main Section---------
+------------------------------*/
 main {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h2 {
   font-size: 35px;
+  margin-bottom: 10px;
 }
 
 /* Card */
-.card-container {
-  border: 1px solid grey;
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* Card Header */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+/*.card-container:after {
+  content: "";
+  flex: auto;
+}*/
+
+.card {
+  width: 275px;
+  border: 1px solid grey;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+
 .card-header {
-  background-image: url('assets/bond.jpg');
-  background-size: cover;
   height: 150px;
+  padding: 20px;
+  background-image: url('assets/bond.jpg');
+  opacity: 0.9;
+  background-size: cover;
+  position: relative;
 }
 
 .forward-link {
-  width: 30px;
+  padding: 10px;
+  width: 50px;
   background-color: white;
+  border-width: 20px;
   border-radius: 50%;
+}
+
+.views-box {
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+
+.views-title {
+  font-size: 14px;
+  color: white;
+}
+
+.views-count {
+  font-size: 28px;
+  color: white;
+}
+
+/* Card Content */
+.card-content {
+  padding: 10px;
+  min-height: 260px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-name {
+  font-size: 16px;
+  color: #3A3A3A;
+}
+
+.card-date {
+  font-size: 12px;
+  color: #8B8B8B;
+}
+
+.card-link {
+  padding: 10px;
+  font-size: 12px;
+  background-color: #EBEBEB;
+  overflow-wrap: break-word
+}
+
+a:visited {
+  color: #8B8B8B;
 }
