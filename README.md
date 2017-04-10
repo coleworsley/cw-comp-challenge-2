@@ -1,6 +1,5 @@
 # Static Comp 2
 
 
-![GitHub Logo](/images/logo.png)
-![Original](https://github.com/coleworsley/cw-comp-challenge-2/edit/master/assets/Comps/Original Comp.png)
-![My Version](/assets/Comps/My Version.png)
+![Original](https://github.com/coleworsley/cw-comp-challenge-2/edit/master/assets/Comps/Original%20Comp.png)
+![My Version](https://github.com/coleworsley/cw-comp-challenge-2/blob/master/assets/Comps/My%20Version.png)
