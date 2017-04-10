@@ -2,5 +2,5 @@
 
 
 ![GitHub Logo](/images/logo.png)
-![Original](/assets/Comps/Original Comp.png)
+![Original](https://github.com/coleworsley/cw-comp-challenge-2/edit/master/assets/Comps/Original Comp.png)
 ![My Version](/assets/Comps/My Version.png)
