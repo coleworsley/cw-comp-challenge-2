@@ -72,7 +72,6 @@ header {
   background-image: url("assets/svg/007.svg");
   background-position: 0px 50%;
   background-size: 30px;
-
 }
 
 .header-profile-link:visited {
@@ -86,6 +85,11 @@ header {
   line-height: 40px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
+  transition: .2s ease-in-out;
+}
+
+.username:hover {
+  color: white;
 }
 
 .down-arrow {
@@ -95,7 +99,14 @@ header {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 12px solid #1AA4FF;
+  transition: .2s ease-in-out;
 }
+
+.down-arrow:hover {
+  border-top-color: white;
+  cursor: pointer;
+}
+
 
 /* Navigation links*/
 nav {
@@ -124,6 +135,7 @@ nav {
 
 .link:hover {
   color: white;
+  cursor: pointer;
 }
 
 .share {
@@ -150,8 +162,6 @@ nav {
   background-image: url('assets/svg/avatar-hover.svg');
 }
 
-
-
 /*----------------------------
 ---------Main Section---------
 ------------------------------*/
@@ -176,6 +186,7 @@ h2 {
 .card {
   max-width: 400px;
   border: 1px solid #8B8B8B;
+  background-color: white;
   margin: 10px .5%;
   flex-grow: 1;
 }
@@ -183,53 +194,67 @@ h2 {
 .card-header {
   height: 150px;
   padding: 20px 5%;
-  opacity: 0.9;
+  opacity: 1.2;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0px;
   position: relative;
 }
 
 .card1 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-image: url('assets/profiles/barry-nelson.jpg');
+
 }
 
 .card2 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-color: #8B8B8B;
+  background-image: url('assets/profiles/david-niven.jpg');
+  background-size: contain;
+  background-position-x: 55%;
 }
 
 .card3 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-image: url('assets/profiles/sean-connery.jpeg');
 }
 
 .card4 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-image: url('assets/profiles/george-lazenby.png');
 }
 
 .card5 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-image: url('assets/profiles/roger-moore.jpg');
 }
 
 .card6 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-image: url('assets/profiles/timothy-dalton.jpg');
+  background-position-x: 70%;
 }
 
 .card7 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-image: url('assets/profiles/pierce-brosnan.jpg');
 }
 
 .card8 .card-header {
-  background-image: url('assets/bond.jpg');
+  background-image: url('assets/profiles/daniel-craig.jpg');
 }
 
-.forward-link {
+.forward-arrow {
   padding: 10px;
   width: 50px;
+  height: 50px;
+  display: inline-block;
   background-color: white;
-  border-width: 20px;
+  background-image: url('assets/svg/forward-arrow.svg');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   transition: 1s ease-in-out;
 }
 
-.forward-link:hover {
+.forward-arrow:hover {
+  background-image: url('assets/svg/gun.svg');
   transform: rotate(360deg);
 }
 
@@ -253,7 +278,7 @@ h2 {
 .card-content {
   padding: 10px 5%;
   min-height: 260px;
-  background-color: white;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
