@@ -108,7 +108,6 @@ header {
   cursor: pointer;
 }
 
-
 /* Navigation links*/
 nav {
   height: 100%;
@@ -186,26 +185,30 @@ h2 {
 
 .card {
   max-width: 400px;
-  border: 1px solid #8B8B8B;
   background-color: white;
   margin: 10px .5%;
   flex-grow: 1;
+  box-shadow: 3px 3px 1px #888888;
 }
 
 .card-header {
   height: 150px;
   padding: 20px 5%;
-  opacity: 1.2;
+  opacity: .8;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 0px;
   position: relative;
+  transition: .2s ease-in-out;
+}
+
+.card-header:hover {
+  opacity: 1.0;
 }
 
 .card1 .card-header {
   background-image: url('assets/profiles/barry-nelson.jpg');
-
 }
 
 .card2 .card-header {
