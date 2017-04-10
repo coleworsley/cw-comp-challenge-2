@@ -1,6 +1,7 @@
 # Static Comp 2
 
-[Original](/assets/Comps/Original Comp.png)
-![alt](/assets/Comps/Original Comp.png)
-[My Version](/assets/Comps/My Version.png)
-![alt](/assets/Comps/My Version.png)
+## Original Comp
+![Original](/assets/Comps/Original%20Comp.png)
+
+## My Version
+![My Version](/assets/Comps/My%20Version.png)
