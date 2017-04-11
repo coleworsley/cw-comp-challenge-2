@@ -372,6 +372,7 @@ a:visited {
   }
 }
 
+/* Everything over 900px*/
 @media (min-width: 900px){
   .card-container {
     max-width: 1300px;
@@ -380,5 +381,11 @@ a:visited {
   .card {
     width: 22%;
     max-width: 250px;
+  }
+
+  main h2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1050px;
   }
 }
